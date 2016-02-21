@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<div ng-controller="changeUser">
+    <h3>Edit User:</h3>
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="control-label">First Name:</label>
+            <div class="">
+                <input type="text" ng-model="fName" placeholder="First Name"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Last Name:</label>
+            <div class="">
+                <input type="text" ng-model="lName" placeholder="Last Name"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Gender:</label>
+            <div class="">
+                <input type="text" ng-model="gender" placeholder="Gender"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Age:</label>
+            <div class="">
+                <input type="text" ng-model="age" placeholder="Age"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Password:</label>
+            <div class="">
+                <input type="password" ng-model="passw1" placeholder="Password"></input>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label">Repeat:</label>
+            <div class="">
+                <input type="password" ng-model="passw2" placeholder="Repeat Password"></input>
+            </div>
+        </div>
+    </form>
+    <hr></hr>
+    <button class="btn btn-success" ng-disabled="error || incomplete" ng-click="saveChanges()">
+        <span class="glyphicon glyphicon-save"></span>  Save Changes
+    </button>
+    <a href="#/"><button class="btn btn-success">  Back</button></a>
+</div>

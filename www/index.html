@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <meta> charset attribuete: specify the character encoding for the HTML document; UTF-8: Character encoding for unicode. -->
+    <title>User List</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.min.js"></script>
+    <script src="js/dirPagination.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller/userlist.js"></script>
+    <script src="js/controller/newuser.js"></script>
+    <script src="js/controller/edituser.js"></script>
+    <style>
+        .sortorder:after {
+            content: '\25b2';
+        }
+        .sortorder.reverse:after {
+            content: '\25bc';
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+
+<div class="container">
+    <h2>User Management System</h2><hr>
+    <div ng-view></div>
+</div>
+</body>
+</html>
