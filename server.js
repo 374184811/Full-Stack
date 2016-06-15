@@ -17,7 +17,7 @@ var testfunc = function(req, res) {
 app.get('/test', testfunc);
 
 http.createServer(app).listen(8888, function() {
-	console.log('Express App started');
+	console.log('Express App started at localhost:8888');
 });
 
 
