@@ -1,4 +1,4 @@
-Need install nodejs first.
+Need to install nodejs first.
 
 To launch the development environment, run
 ```bash
